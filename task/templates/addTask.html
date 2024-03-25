@@ -2,6 +2,9 @@
 
 <div class="container-fluid w-50 mx-auto my-5 border p-5 rounded shadow">
   <h4 class="mb-5">Add Task</h4>
-  <form action="" method="POST">{%csrf_token%} {{form | crispy}}</form>
+  <form action="" method="POST">
+    {%csrf_token%} {{form | crispy}}
+    <button class="btn btn-success" type="submit">Submit</button>
+  </form>
 </div>
 {%endblock%}
